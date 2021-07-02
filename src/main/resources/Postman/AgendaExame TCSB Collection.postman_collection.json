@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "561ad203-abef-4936-a037-3f0d6bdb8523",
+		"name": "AgendaExame TCSB Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adicionar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataHoraExame\": \"2019-02-20T05:01:00.000Z\",\r\n  \"id\": 1,\r\n  \"nomeexame\": \"teste\",\r\n  \"paciente\": \"tesets\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendaexame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendaexame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataHoraExame\": \"2019-02-20T07:01:00.000Z\",\r\n  \"id\": 2,\r\n  \"nomeexame\": \"teste\",\r\n  \"paciente\": \"tesets\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendaexame/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendaexame",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agendaexame/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendaexame",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remover",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agendaexame/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendaexame",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agendaexame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendaexame"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

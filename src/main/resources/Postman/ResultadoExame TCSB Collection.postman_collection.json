@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "01ad1c46-f60f-42f4-a373-9d2f3cd6fd4b",
+		"name": "ResultadoExame TCSB Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adicionar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cliente\": {\r\n    \"dataNascimento\": \"1981-02-16\",\r\n    \"id\": 1,\r\n    \"nome\": \"Julitte Freire\",\r\n    \"telefone\": 21999999999\r\n  },\r\n  \"crm\": \"CRM\",\r\n  \"dataExame\": \"2021-05-02\",\r\n  \"dataResultado\": \"2021-05-02\",\r\n  \"descricao\": \"exame COVID\",\r\n  \"id\": 1,\r\n  \"laboratorio\": {\r\n    \"descricao\": \"LAB+\",\r\n    \"id\": 1,\r\n    \"nome\": \"LAB+\"\r\n  },\r\n  \"medico\": \"Dr. Java\",\r\n  \"nome\": \"Exame COVID\",\r\n  \"resultado\": \"Positivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resultadoexame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resultadoexame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/resultadoexame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resultadoexame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/resultadoexame/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resultadoexame",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remover",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/resultadoexame/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resultadoexame",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cliente\": {\r\n    \"dataNascimento\": \"1981-02-16\",\r\n    \"id\": 1,\r\n    \"nome\": \"Julitte Freire\",\r\n    \"telefone\": 21999999999\r\n  },\r\n  \"crm\": \"CRM\",\r\n  \"dataExame\": \"2021-05-02\",\r\n  \"dataResultado\": \"2021-05-02\",\r\n  \"descricao\": \"exame COVID Alterado\",\r\n  \"id\": 1,\r\n  \"laboratorio\": {\r\n    \"descricao\": \"LAB+\",\r\n    \"id\": 1,\r\n    \"nome\": \"LAB+\"\r\n  },\r\n  \"medico\": \"Dr. Java\",\r\n  \"nome\": \"Exame COVID\",\r\n  \"resultado\": \"Positivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resultadoexame/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resultadoexame",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
